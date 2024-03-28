@@ -1,47 +1,46 @@
-
-#chris_body, #chris_h1, #chris_h2, #chris_h3, #chris_h4, #chris_h5,#chris_h6, #chris_ul, #chris_li, #chris_a {
+body, #h1, #h2, #h3, #h4, #h5,#h6, #ul, #li, #nav_links {
   margin: 0;
   padding: 0 0 2px;
   font-family: 'Arial', sans-serif;
   text-decoration: none;
   font-size: 1.25rem;
 }
-#chris_p{
+p{
   margin: 0;
-  padding: 0 0 2px;
+  padding: 0 0 3px;
   font-family: 'Arial', sans-serif;
   text-decoration: none;
   font-size: 1rem;
 }
 
-#chris_body {
+body {
   background-color: #f9f9f9;
   color: #333;
 }
 
-#chris_header {
+header {
   background-color: #002244;
   padding: 1rem 0;
 }
 
-#chris_nav #chris_ul {
-  display: flex;
+#nav ul  {
+  display: flex; 
   justify-content: center;
   list-style-type: none;
-  
-}
-
-#chris_nav #chris_li {
   margin: 0 15px;
 }
 
-#chris_nav #chris_a {
+#nav li { 
+  margin: 0 15px;
+}
+
+#nav a {
   color: #ecf0f1;
   font-weight: bold;
   margin: 0 15px;
 }
 
-#chris_projects, #chris_about-me, #chris_contact,#chris_skills {
+#ExperienceWork, #about-me, #contact,#skills {
   padding: 2rem;
   background-color: #fff;
   margin: 1rem 10%;
@@ -49,14 +48,14 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#chris_project-card {
+#project-card {
   border: 1px solid #eaeaea;
   padding: 1rem;
   margin-top: 1rem;
   border-radius: 7px;
 }
 
-#chris_footer {
+footer {
   text-align: center;
   margin-top: 2rem;
   color: #777;
