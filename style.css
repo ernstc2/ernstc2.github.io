@@ -13,6 +13,12 @@ p{
   font-size: 1rem;
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
   background-color: #f9f9f9;
   color: #333;
@@ -37,7 +43,12 @@ header {
 #nav a {
   color: #ecf0f1;
   font-weight: bold;
-  margin: 0 15px;
+  margin: 0 px;
+  
+}
+
+#nav_links:hover {
+  color: #2776c5;
 }
 
 #ExperienceWork, #about-me, #contact,#skills {
