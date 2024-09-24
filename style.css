@@ -1,4 +1,4 @@
-body, #h1, #h2, #h3, #h4, #h5,#h6, #ul, #li, #nav_links {
+body, #h1, #h2, #h3, #h4, #h5,#h6,#h7, #ul, #li, #nav_links {
   margin: 0;
   padding: 0 0 2px;
   font-family: 'Arial', sans-serif;
@@ -51,7 +51,7 @@ header {
   color: #2776c5;
 }
 
-#ExperienceWork, #about-me, #contact,#skills {
+#ExperienceWork, #about-me, #contact,#skills,#Education {
   padding: 2rem;
   background-color: #fff;
   margin: 1rem 10%;
