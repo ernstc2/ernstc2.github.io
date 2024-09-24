@@ -71,3 +71,24 @@ footer {
   margin-top: 2rem;
   color: #777;
 }
+
+#nav {
+  background-color: transparent;
+  padding: 15px;
+  position: relative;
+  transition: background 0.3s;
+}
+
+
+#face {
+  transition: transform 0.3s ease;
+}
+
+#face:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
