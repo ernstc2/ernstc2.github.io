@@ -161,3 +161,9 @@ html {
     background-color: #2776c5;
 }
 
+.experience-grid img {
+  width: 100%; /* Ensures the image takes up the full width of its container */
+  height: 200px; /* Sets a fixed height for consistency */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio while filling the area */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+}
