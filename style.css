@@ -161,7 +161,7 @@ html {
     background-color: #2776c5;
 }
 
-.experience-card img {
+.experience-image {
   width: 100%; /* Ensures the image spans the width of its container */
   height: 200px; /* Sets a fixed height for all images */
   object-fit: cover; /* Ensures the image scales properly without distortion */
