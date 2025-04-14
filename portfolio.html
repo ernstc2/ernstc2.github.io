@@ -1,0 +1,87 @@
+<!-- portfolio.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Full Portfolio</title>
+  <!-- Reuse the same stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======== Header / Navigation (copied from index.html) ======== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <h1>Christopher Ernst-Fortin</h1>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <!-- Match the same links/order as index.html -->
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#resume">Resume</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== Portfolio Gallery ========== -->
+  <section class="portfolio-gallery">
+    <div class="container">
+      <h2>All Projects</h2>
+      <p>A closer look at the projects I've worked on, from AI lung-scan classification to church calendars and travel planning apps.</p>
+
+      <div class="project-grid">
+        
+        <!-- ===== Church Website ===== -->
+        <div class="project-card">
+          <!-- Make sure 'project3.png' matches the real file name/path -->
+          <img src="project3.png" alt="Presbyterian Church Website Screenshot" />
+          <h3>Presbyterian Church Website</h3>
+          <p>
+            A responsive site showcasing events, sermons, and an interactive calendar.  
+            Built with HTML, CSS, and JavaScript, focusing on community engagement.
+          </p>
+          <!-- Optional link button (to GitHub, live demo, or a case study) -->
+          <!-- <a href="#" class="btn btn-secondary">View More</a> -->
+        </div>
+
+        <!-- ===== MaLung ===== -->
+        <div class="project-card">
+          <!-- Make sure 'project1.png' matches the real file name/path -->
+          <img src="project1.png" alt="MaLung Project Screenshot" />
+          <h3>MaLung</h3>
+          <p>
+            AI-driven COVID-19 lung-scan classifier built with Docker &amp; Microsoft Azure.  
+            Integrated a responsive Figma design with a MariaDB database via PHP.
+          </p>
+          <!-- <a href="#" class="btn btn-secondary">GitHub Repo</a> -->
+        </div>
+
+        <!-- ===== Travercity ===== -->
+        <div class="project-card">
+          <!-- Make sure 'project2.png' matches the real file name/path -->
+          <img src="project2.png" alt="Travercity Project Screenshot" />
+          <h3>Travercity</h3>
+          <p>
+            A travel planning web app that features real-time weather integration  
+            and location-based recommendations for a better itinerary experience.
+          </p>
+          <!-- <a href="#" class="btn btn-secondary">Live Demo</a> -->
+        </div>
+
+      </div> <!-- .project-grid -->
+    </div> <!-- .container -->
+  </section>
+
+  <!-- ========== Footer (Optional) ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Christopher Ernst-Fortin. All rights reserved. I cant believe you read this.</p>
+    </div>
+  </footer>
+</body>
+</html>

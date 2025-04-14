@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" 
+    rel="stylesheet"
+  >
+</head>
+
+<body>
+
+  <!-- ======== Header / Navigation ======== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <h1>Christopher Ernst-Fortin</h1>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li> <!-- NEW LINK IN NAV -->
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======== Hero Section ======== -->
+  <section id="home" class="hero-section">
+    <div class="container hero-content">
+      <!-- Text Column -->
+      <div class="hero-text">
+        <h2>Hello! I'm Chris :D</h2>
+        <h1>I'm a Professional Software Engineer &amp; <span>Web Designer</span></h1>
+        <p>Yes, that is an AI image of myself. But I swear I'm real.</p>
+        <div class="buttons">
+          <a href="#" class="btn btn-primary" id="hireMeBtn">Hire Me</a>
+          <a href="Christopher-Ernst-Fortin-RESUME.pdf" class="btn btn-secondary" download="Christopher-Ernst-Fortin-Resume.pdf">Download CV</a>
+        </div>
+        <!-- Modal (hidden by default) placed inside hero-text -->
+        <div id="hireMeModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>WOW! You really clicked that??</h2>
+            <p>Connect with me:</p>
+            <ul>
+              <li><strong>Phone:</strong> <a href="tel:7707224302">770-722-4302</a></li>
+              <li><strong>Email:</strong> <a href="mailto:cernstfortin@gmail.com">cernstfortin@gmail.com</a></li>
+              <li><strong>LinkedIn:</strong> <a href="http://linkedin.com/in/chris-ernstfortin" target="_blank">chris-ernstfortin</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Image Column -->
+      <div class="hero-image">
+        <img src="wow.jpg" alt="Your Portrait" />
+      </div>
+    </div>
+    
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/chris-ernstfortin" target="_blank">
+        <img src="icons/linkedin.png" alt="LinkedIn Icon" />
+      </a>
+      <a href="https://github.com/ernstc2" target="_blank">
+        <img src="icons/github.png" alt="GitHub Icon" />
+      </a>
+      <a href="mailto:cernstfortin@gmail.com">
+        <img src="icons/gmail.png" alt="Gmail Icon" />
+      </a>
+    </div>
+  </section>
+  
+  
+
+  <!-- ======== About Section ======== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I’m Christopher Ernst-Fortin, a soon to be graduate of Rensselaer Polytechnic Institute in Internet Technology and Web Sciences with a minor in Economics. 
+        My passion lies in creating impactful web solutions, whether that means building cutting edge apps at scale, improving user experiences on social media platforms, 
+        or crafting innovative tools for the gaming community.
+      </p>
+      <p>
+        Beyond my academic projects from AI powered lung scan classifiers to travel apps integrating real time weather, I’ve also tackled real world 
+        challenges during my internship at GamesThatWork and my time as a full stack developer for Johnson & Johnson. These roles sharpened my expertise in JavaScript, 
+        Node.js, Microsoft PowerApp, Microsoft SharePoint, and collaborative Agile workflows.
+      </p>
+      <p>
+        When I’m not coding or leading a development team, I’m Probably wasting my money on videogames or watching people my age do things I'm glad im not. Please feel free to reach out,
+        im always happy to connect. 😎
+      </p>
+    </div>
+  </section>
+
+  <!-- ======== Portfolio Section ======== -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <!-- Intro Content -->
+      <div class="portfolio-intro">
+        <h2>Portfolio</h2>
+        <p>
+          A quick look at some of my favorite projects. Click below to dive deeper
+          into my full collection of work, from web apps to AI-driven solutions.
+        </p>
+      </div>
+  
+      <!-- Button Wrapper -->
+      <div class="portfolio-btn-wrapper">
+        <a href="portfolio.html" class="btn btn-primary">
+          View All Projects
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  
+
+
+  <!-- ======== Resume Section ======== -->
+  <section id="resume" class="resume-section">
+    <div class="container">
+      <!-- Main Heading -->
+      <h2>Resume</h2>
+  
+      <!-- ===== Contact Info (Grid) ===== -->
+      <div class="resume-contact">
+        <div class="contact-item">
+          <strong>Address:</strong>
+          <span>15th Street, Troy, NY 12180</span>
+        </div>
+        <div class="contact-item">
+          <strong>Phone:</strong>
+          <a href="tel:7707224302">770-722-4302</a>
+        </div>
+        <div class="contact-item">
+          <strong>Email:</strong>
+          <a href="mailto:cernstfortin@gmail.com">cernstfortin@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <strong>LinkedIn:</strong>
+          <a href="https://linkedin.com/in/chris-ernstfortin" target="_blank">chris-ernstfortin</a>
+        </div>
+      </div>
+  
+      <!-- ===== Technical Skills (As “Tags”) ===== -->
+      <div class="resume-block">
+        <h3>Technical Skills</h3>
+        <div class="skills-list">
+          <!-- Add all your skills as skill-tag spans -->
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Express</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">jQuery</span>
+          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">Figma</span>
+          <span class="skill-tag">Web Design</span>
+          <span class="skill-tag">MS-Word</span>
+          <span class="skill-tag">MS-Excel</span>
+          <span class="skill-tag">Agile Methodology</span>
+          <span class="skill-tag">Communication</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">REST API</span>
+          <span class="skill-tag">Windows</span>
+          <span class="skill-tag">Project Management</span>
+          <span class="skill-tag">Cloud Computing</span>
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">SaaS</span>
+          <span class="skill-tag">Problem Solving</span>
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">R</span>
+          <span class="skill-tag">Troubleshooting</span>
+        </div>
+      </div>
+  
+      <!-- ===== Education ===== -->
+      <div class="resume-block">
+        <h3>Education</h3>
+      
+        <div class="education-entry">
+          <h4>Rensselaer Polytechnic Institute (RPI) — Troy, NY</h4>
+          
+          <!-- Degree + Minor -->
+          <p>
+            <strong>Bachelor of Science in Internet Technology and Web Sciences</strong> 
+            <em>(Minor: Economics)</em>
+          </p>
+          
+          <!-- Graduation + GPA -->
+          <p>
+            <strong>Expected Graduation:</strong> May 2025 <br>
+            <strong>GPA:</strong> 3.22 / 4.00
+          </p>
+          
+          <!-- Relevant Coursework as bullet points -->
+          <p><strong>Relevant Coursework:</strong></p>
+          <ul class="coursework-list">
+            <li>Data Structures</li>
+            <li>HCI</li>
+            <li>Computer Information Systems</li>
+            <li>Computer Organization</li>
+            <li>Web Systems Development</li>
+            <li>Foundations of CS</li>
+            <li>IT &amp; Web Science Capstone</li>
+            <li>Web Science Systems Development</li>
+          </ul>
+        </div>
+      </div>
+      
+  
+      <!-- ===== Experience ===== -->
+      <div class="resume-block">
+        <h3>Experience</h3>
+  
+        <!-- J&J -->
+        <div class="job-entry">
+          <h4>J&amp;J MedTech Supply Chain Product Availability App (Troy, NY)</h4>
+          <span class="job-dates">January 2025 – Present</span>
+          <ul>
+            <li>Developed a Microsoft PowerApp for product availability notifications.</li>
+            <li>Designed admin and customer service interfaces for streamlined access and notifications.</li>
+            <li>Integrated SharePoint List for structured data management and access control.</li>
+          </ul>
+        </div>
+  
+        <!-- GamesThatWork -->
+        <div class="job-entry">
+          <h4>GamesThatWork — Software Engineering Intern (Atlanta, GA)</h4>
+          <span class="job-dates">March 2024 – August 2024</span>
+          <ul>
+            <li>Developed authentication systems using Google Firebase + JavaScript.</li>
+            <li>Collaborated with QA and UX teams to deploy new features across multiple versions.</li>
+            <li>Resolved 51 software bugs via GitHub pull requests.</li>
+          </ul>
+        </div>
+  
+        <!-- Flash.co -->
+        <div class="job-entry">
+          <h4>Flash.co — Application Manager (Peachtree Corners, GA)</h4>
+          <span class="job-dates">May 2015 – September 2015</span>
+          <ul>
+            <li>Defined project-wide performance metrics and managed development timelines.</li>
+            <li>Provided technical leadership for 3 application versions.</li>
+            <li>Led a team of 5 testers, overseeing release of apps used by 20+ users.</li>
+          </ul>
+        </div>
+  
+        <!-- Lazy Dog -->
+        <div class="job-entry">
+          <h4>Lazy Dog Restaurant &amp; Bar — Food Runner (Peachtree Corners, GA)</h4>
+          <span class="job-dates">May 2021 – August 2021</span>
+          <ul>
+            <li>Provided outstanding customer service to 50+ daily guests.</li>
+            <li>Collaborated with staff to maintain efficient service flow and restocking.</li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- ===== Projects ===== -->
+      <div class="resume-block">
+        <h3>Projects</h3>
+  
+        <!-- MaLung -->
+        <div class="job-entry">
+          <h4>MaLung (RPI Software Engineering &amp; Design Class Project)</h4>
+          <span class="job-dates">September 2022 – December 2022</span>
+          <ul>
+            <li>Collaborated in a team of 3 to design a COVID-19 AI classifier for lung scans.</li>
+            <li>Managed back-end/DevOps, hosting on Microsoft Azure with Docker.</li>
+            <li>Built a responsive UI in Figma and integrated a MariaDB database via PHP.</li>
+          </ul>
+        </div>
+  
+        <!-- Travercity -->
+        <div class="job-entry">
+          <h4>Travercity (RPI Software Engineering &amp; Design Class Project)</h4>
+          <span class="job-dates">September 2023 – December 2023</span>
+          <ul>
+            <li>Designed a travel planning web app with real-time weather integration.</li>
+            <li>Enhanced user experience with location-based recommendations.</li>
+          </ul>
+        </div>
+  
+        <!-- King Ferry Presbyterian Church -->
+        <div class="job-entry">
+          <h4>King Ferry Presbyterian Church — Web Page Project Manager</h4>
+          <span class="job-dates">September 2024 – December 2024</span>
+          <ul>
+            <li>Led a team of 4 to develop a responsive website for events and outreach.</li>
+            <li>Built with HTML, CSS, JavaScript, focusing on user-friendly design.</li>
+            <li>Integrated a calendar and contact form to boost engagement.</li>
+          </ul>
+        </div>
+      </div>
+  
+    </div> <!-- .container -->
+  </section>
+  
+  
+
+  <!-- ======== Contact Section ======== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>
+        Interested in working together or have any questions? 
+        I will literally instantly respond to you. I promise.
+      </p>
+  
+      <!-- Contact Info (optional) -->
+      <div class="contact-info">
+        <p><strong>Phone:</strong> <a href="tel:7707224302">770-722-4302</a></p>
+        <p><strong>Email:</strong> <a href="mailto:cernstfortin@gmail.com">cernstfortin@gmail.com</a></p>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <!-- ======== Footer ======== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Christopher Ernst-Fortin. All rights reserved. I cant believe you read this.</p>
+    </div>
+  </footer>
+
+<script src="modal.js"></script>
+</body>
+</html>

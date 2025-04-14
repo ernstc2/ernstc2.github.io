@@ -1,0 +1,1131 @@
+/* Global reset and base styles from before */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: #1a1a1a;
+  }
+  
+/* Global link styling */
+
+  
+
+
+  /* Container utility class */
+  .container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  /* Header */
+  .site-header {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+  }
+  
+  .site-header .logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+  }
+  
+  .main-nav a {
+    text-decoration: none;
+    color: #aaa;
+    transition: color 0.3s ease;
+  }
+  
+  .main-nav a:hover,
+  .main-nav a.active {
+    color: #fff;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background-color: #2e2e2e;
+    padding: 100px 0;
+    text-align: left;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.2rem;
+    color: #ffce48; /* Accent color */
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content h1 span {
+    color: #ffce48; /* Accent color */
+  }
+  
+  .hero-content p {
+    max-width: 500px;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    color: #ccc;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #5c4dff;
+    color: #fff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #3d33b3;
+  }
+  
+  .btn-secondary {
+    background-color: #fbc531;
+    color: #000;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #f3b621;
+  }
+  
+  /* About Section */
+  .about-section {
+    background-color: #1a1a1a;
+    padding: 60px 0;
+  }
+  
+  .about-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ffce48;
+  }
+  
+  /* Services Section */
+  .services-section, .portfolio-section {
+    background-color: #2e2e2e;
+    padding: 60px 0;
+  }
+  
+  .services-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ffce48;
+  }
+  
+  /* Resume Section */
+  .portfolio-section {
+    background-color: #2e2e2e;
+    padding: 60px 0;
+  }
+  
+  .resume-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #ffce48;
+  }
+  
+  .resume-contact-info p {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+  }
+  
+  .resume-section-block {
+    margin-bottom: 2rem;
+  }
+  
+  .resume-section-block h3 {
+    font-size: 1.5rem;
+    color: #ffce48;
+    margin-bottom: 1rem;
+  }
+  
+  .resume-section-block h4 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 0.25rem;
+  }
+  
+  .resume-section-block span {
+    display: block;
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 0.5rem;
+  }
+  
+  .resume-section-block p,
+  .resume-section-block li {
+    color: #ccc;
+    line-height: 1.6;
+  }
+  
+  .resume-job,
+  .resume-project {
+    margin-bottom: 1.5rem;
+  }
+  
+  .resume-job ul,
+  .resume-project ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* Footer */
+  .site-footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .site-footer p {
+    color: #888;
+    font-size: 0.9rem;
+  }
+  .site-header .container {
+    display: flex;            /* make the container a flex container */
+    align-items: center;      /* vertically center the items (logo and nav) */
+    justify-content: space-between; /* put space between logo on the left and nav on the right */
+  }
+  /* Hero Section */
+.hero-section {
+    background-color: #2e2e2e;
+    padding: 100px 0;
+  }
+  
+  /* The container that holds both text + image columns */
+  .hero-content {
+    display: flex; 
+    /* ensures the text (hero-text) and image (hero-image) 
+       can sit side by side horizontally */
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 2rem; /* spacing between columns */
+  }
+  
+  /* Text Column */
+  .hero-text {
+    flex: 1; /* let the text take up available space */
+    color: #fff; 
+  }
+  
+  .hero-text h2 {
+    font-size: 1.2rem;
+    color: #ffce48; 
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text h1 span {
+    color: #ffce48;
+  }
+  
+  .hero-text p {
+    max-width: 500px;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    color: #ccc;
+  }
+  
+  /* Image Column */
+  .hero-image {
+    flex: 1; /* or flex: 0.5 or any fraction to adjust sizing */
+    display: flex;
+    justify-content: center; /* center the image horizontally */
+    align-items: center;     /* center it vertically if needed */
+  }
+  
+  .hero-image img {
+    max-width: 100%; /* ensures image is responsive */
+    height: auto;    /* maintain aspect ratio */
+    border-radius: 8px; /* optional if you want slightly rounded corners */
+  }
+  
+
+  @media (max-width: 768px) {
+    .hero-content {
+      flex-direction: column;  /* stack text above image on narrow screens */
+      justify-content: center; /* center them */
+      align-items: center;
+      text-align: center;      /* optional: center the text */
+    }
+  
+    .hero-text, .hero-image {
+      flex: unset;  /* remove the flex grow/shrink so they don’t try to fit side by side */
+      width: 100%;  /* full width for each item */
+      margin-bottom: 2rem; /* space between text and image */
+    }
+  }
+  
+
+  .resume-section a {
+  color: #66D9FF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.resume-section a:hover {
+  color: #00BCD4;
+}
+
+
+
+
+/* Contact Section */
+.contact-section {
+    background-color: #2e2e2e; /* or #2e2e2e if you prefer alternating color */
+    padding: 60px 0;
+  }
+  
+  .contact-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ffce48; /* accent color */
+  }
+  
+  .contact-section p {
+    color: #ccc;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info p {
+    color: #ccc;
+    margin-bottom: 0.5rem;
+  }
+  .contact-info a {
+    color: #66d9ff; /* link color for phone/email */
+    text-decoration: none;
+  }
+  .contact-info a:hover {
+    color: #00bcd4;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    max-width: 600px; /* limit form width on larger screens */
+    margin: 0 auto;   /* center it */
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ffce48; /* label accent color */
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #555; 
+    border-radius: 4px;
+    background-color: #2e2e2e; /* so it blends with the dark theme */
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: #aaa; /* placeholder color */
+  }
+  
+  /* Submit Button */
+  .contact-form .btn-primary {
+    background-color: #5c4dff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form .btn-primary:hover {
+    background-color: #3d33b3;
+  }
+  
+
+  .about-section p {
+    margin-bottom: 1rem; /* or 1.5rem for more spacing */
+  }
+  
+
+  /* The modal background overlay (hidden by default) */
+/* ======================
+   MODAL OVERLAY
+   ====================== */
+   .modal {
+    display: none;              /* hidden by default */
+    position: fixed;            /* stay in place */
+    z-index: 999;               /* sit on top of other elements */
+    left: 0; 
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;             /* enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.6); /* dim background */
+    opacity: 0;                 /* for fade-in animation */
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Show the modal by adding a custom class (we'll do this in JS) */
+  .modal.show {
+    display: block; 
+    opacity: 1; /* transitions from 0 -> 1 for a nice fade in */
+  }
+  
+  /* ======================
+     MODAL CONTENT BOX
+     ====================== */
+  .modal-content {
+    background-color: #2e2e2e;
+    margin: 10% auto; 
+    padding: 30px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    color: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6); /* a nice card-like shadow */
+    animation: slideDown 0.3s ease forwards; /* small “slide down” effect */
+  }
+  
+  /* Add a simple slide-down animation for the content box */
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* ======================
+     CLOSE BUTTON (X)
+     ====================== */
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover / Focus states for the close button */
+  .close:hover,
+  .close:focus {
+    color: #fff;
+  }
+  
+  /* ======================
+     HEADING & TEXT
+     ====================== */
+  .modal-content h2 {
+    margin-top: 0;       /* remove default heading margin-top */
+    margin-bottom: 0.5rem;
+    color: #ffce48;      /* your accent color */
+    font-size: 1.8rem;
+  }
+  
+  .modal-content p {
+    margin: 0 0 1rem 0;  /* spacing under paragraphs */
+    color: #ccc;
+  }
+  
+  /* ======================
+     LIST (optional styling)
+     ====================== */
+  .modal-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .modal-content li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 20px;  /* room for custom bullet */
+  }
+  
+  /* Custom bullet in accent color */
+  .modal-content li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #ffce48;
+  }
+  
+  /* ======================
+     LINKS (phone/email/LinkedIn)
+     ====================== */
+  .modal-content a {
+    color: #66d9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .modal-content a:hover {
+    color: #00bcd4;
+  }
+  
+
+  .close {
+    background: #ffce48;
+    border-radius: 50%;
+    color: #2e2e2e;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .close:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  
+/* ===== Resume Section Base ===== */
+.resume-section {
+    padding: 60px 0; /* or match your site's section spacing */
+  }
+  
+  /* Main heading */
+  .resume-section h2 {
+    color: #ffce48; /* your accent color */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Content Blocks (Skills, Education, Experience, Projects) */
+  .resume-block {
+    margin-bottom: 2rem; 
+  }
+  
+  .resume-block h3 {
+    font-size: 1.5rem;
+    color: #ffce48;
+    margin-bottom: 1rem;
+  }
+  
+  .resume-block h4 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 0.25rem;
+  }
+  
+  /* Paragraph and bullet style */
+  .resume-block p,
+  .resume-block ul,
+  .resume-block li {
+    color: #ccc;
+    line-height: 1.6;
+  }
+  
+  /* ===== Contact Info (Grid) ===== */
+  .resume-contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-item strong {
+    display: inline-block;
+    width: 80px;
+    color: #fff;
+  }
+  
+  .contact-item a {
+    color: #66d9ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-item a:hover {
+    color: #00bcd4;
+  }
+  
+  /* ===== Skills as “Tags” ===== */
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .skill-tag {
+    background-color: #444; 
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  .skill-tag:hover {
+    background-color: #666;
+  }
+  
+  /* ===== Experience / Projects Entries ===== */
+  .job-entry {
+    margin-bottom: 1.5rem;
+  }
+  
+  .job-entry h4 {
+    margin-bottom: 0.25rem; 
+  }
+  
+  .job-dates {
+    display: block;
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 0.5rem;
+  }
+  
+  .job-entry ul {
+    list-style: disc;
+    margin-left: 1.2rem;
+    margin-top: 0.5rem;
+  }
+  
+  .job-entry li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Container for the education entry */
+.education-entry {
+    margin-bottom: 1.5rem; /* spacing below if you have multiple education entries */
+  }
+  
+  .education-entry h4 {
+    margin-bottom: 0.5rem; 
+    color: #fff; /* heading color */
+  }
+  
+  .education-entry p {
+    margin-bottom: 0.75rem; /* spacing between paragraphs */
+    color: #ccc;            /* text color */
+    line-height: 1.6;       /* readability */
+  }
+  
+  /* Optional: emphasize bold text or headings */
+  .education-entry strong {
+    color: #fff; 
+  }
+  
+  /* Coursework list style */
+  .coursework-list {
+    list-style: disc;
+    margin: 0.5rem 0 1rem 1.5rem; /* indentation for bullet points */
+    color: #ccc;
+    line-height: 1.6;
+  }
+  
+  .coursework-list li {
+    margin-bottom: 0.5rem; /* space between each item */
+  }
+  
+
+  .coursework-list {
+    columns: 3; 
+    column-gap: 2rem;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+
+  .btn {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  .btn:hover {
+    transform: translateY(-2px); /* subtle “lift” effect */
+  }
+
+
+  .portfolio-gallery {
+    background-color: #1a1a1a; /* or #2e2e2e if you want alternating sections */
+    padding: 60px 0;
+  }
+  
+  .portfolio-gallery h2 {
+    color: #ffce48;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    background-color: #2e2e2e;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .project-card img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .project-card h3 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-card p {
+    color: #ccc;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+
+  /* Center the heading and paragraph */
+.portfolio-intro {
+    text-align: center;
+    max-width: 700px;  /* optional: limit line length */
+    margin: 0 auto;    /* center the intro block itself */
+    margin-bottom: 2rem; /* space below before the button */
+  }
+  
+  /* Center the button separately */
+  .portfolio-btn-wrapper {
+    text-align: center;
+  }
+
+  .portfolio-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #ffce48; /* same accent color as Resume */
+  }
+  
+  /* ========== Portfolio Gallery Section ========== */
+.portfolio-gallery {
+    background-color: #1a1a1a; /* or #2e2e2e if you want to alternate */
+    padding: 60px 0;
+    text-align: center; /* center headings and text by default */
+  }
+  
+  .portfolio-gallery h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ffce48;
+  }
+  
+  .portfolio-gallery p {
+    color: #ccc;
+    max-width: 600px; /* limit paragraph width */
+    margin: 0 auto 2rem; /* center and add bottom spacing */
+  }
+  
+  /* ========== Project Grid ========== */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: start; /* aligns card tops consistently */
+  }
+  
+  .project-card {
+    background-color: #2e2e2e;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .project-card h3 {
+    color: #ffce48;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-card p {
+    color: #ccc;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  
+/* ==== Buttons on project cards ==== */
+.project-card .btn.btn-secondary {
+    background-color: #fbc531; /* or any accent color you like */
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-card .btn.btn-secondary:hover {
+    background-color: #f3b621;
+  }
+  
+  /* ==== Project Grid Layout ==== */
+  .project-grid {
+    display: grid;
+    /* Slightly wider than 300px so each card is a bit bigger */
+    grid-template-columns: repeat(auto-fill, minmax(375px, 1fr)); 
+    gap: 2rem;
+    align-items: start;
+  }
+  
+  /* ==== Project Card Base Styling ==== */
+  .project-card {
+    /* Allows smooth scaling transitions */
+    transition: transform 0.3s ease;  
+    transform-origin: center top; /* so the scale effect extends downward */
+    background-color: #2e2e2e;    /* ensure card background matches your dark theme */
+    border-radius: 8px;          
+    padding: 20px;               
+    text-align: center;          
+  }
+  
+  /* Optional: Make second card appear 5% bigger */
+  .project-card:nth-child(2) {
+    transform: scale(1.05);
+  }
+  
+
+  .project-card {
+    transform: scale(1);           /* Default scale is 1 (no scaling) */
+    transition: transform 0.3s ease;
+  }
+  
+  /* All cards grow on hover */
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Match the pattern from index.html (e.g., #2e2e2e) */
+.portfolio-gallery {
+    background-color: #2e2e2e;
+    padding: 60px 0; /* same vertical padding as your other sections */
+    text-align: center; /* optional, if you want centered headings */
+  }
+
+
+  /* Container for the projects */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* or 375px if you like them larger */
+    gap: 2rem;
+    align-items: start;
+    margin-top: 2rem; /* optional spacing from heading/paragraph */
+  }
+  
+  /* Individual cards */
+  .project-card {
+    background-color: #2e2e2e;       /* stands out against #1a1a1a or similar */
+    border-radius: 8px;
+    padding: 1.5rem; 
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* subtle box shadow for depth */
+    transition: transform 0.3s ease;
+    transform-origin: center top;
+  }
+  
+  /* On hover, gently lift the card */
+  .project-card:hover {
+    transform: translateY(-4px); /* or scale(1.02) if you prefer scaling */
+  }
+  
+  /* Images inside the card */
+  .project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem; /* spacing below image */
+  }
+  
+  /* Project title */
+  .project-card h3 {
+    color: #ffce48;  /* your gold accent */
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  /* Description paragraph */
+  .project-card p {
+    color: #ccc;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  /* Optional: a button inside the card for “Learn More,” “View Demo,” etc. */
+  .project-card .btn {
+    background-color: #fbc531;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-weight: 600;
+  }
+  .project-card .btn:hover {
+    background-color: #f3b621;
+  }
+
+
+  .project-card {
+    background-color: #2e2e2e; /* Match your hero/resume dark section color */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    transform-origin: center top;
+  }
+  
+  /* Heading/accent color */
+  .project-card h3 {
+    color: #ffce48; /* or whatever accent color you use for headings site-wide */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Body text */
+  .project-card p {
+    color: #ccc;
+    line-height: 1.5;
+  }
+  
+  /* Example: scale on hover */
+  .project-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    align-items: start;
+    margin-top: 2rem; 
+  }
+  
+  /* Card container */
+  .project-card {
+    background-color: #000;  /* solid black */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    color: #ccc;            /* text color against black */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* subtle shadow for depth */
+    transition: transform 0.3s ease;
+    transform-origin: center top;
+  }
+  
+  /* Hover effect: gently lift or scale the card */
+  .project-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* Images inside the card */
+  .project-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Title (in your accent color or white) */
+  .project-card h3 {
+    color: #ffce48; /* or #fff, if you'd rather keep it simple */
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  /* Description paragraph */
+  .project-card p {
+    color: #ccc;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  /* Optional: button within the card */
+  .project-card .btn {
+    background-color: #fbc531;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    font-weight: 600;
+  }
+  .project-card .btn:hover {
+    background-color: #f3b621;
+  }
+  .project-card {
+    background-color: #1a1a1a; /* match the header color */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    color: #ccc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    transform-origin: center top;
+  }
+  
+  .project-card h3 {
+    color: #ffce48; /* your accent color */
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .project-card p {
+    color: #ccc; /* ensure good contrast on #1a1a1a */
+    line-height: 1.5;
+  }
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem; /* adjust to add space above the icons */
+  }
+  
+  .social-icons a img {
+    width: 40px;      /* icon size */
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Subtle hover effect */
+  .social-icons a:hover img {
+    transform: scale(1.1);
+  }
+
+  .social-icons {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;       /* or right: 30px; for bottom-right corner */
+    display: flex;
+    gap: 1rem;
+  }
+  
+
+  .social-icons i {
+    color: #ffce48;
+    margin-right: 1rem;
+    transition: transform 0.3s;
+  }
+  .social-icons i:hover {
+    transform: scale(1.1);
+  }
+  
+
+  .hero-section {
+    background-color: #2e2e2e;
+    padding: 100px 0;
+    text-align: left;
+    position: relative; /* important for absolute positioning of child elements */
+  }
+  .social-icons {
+    position: absolute;
+    bottom: 30px; /* how far from the bottom edge */
+    left: 30px;   /* how far from the left edge */
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-icons img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a:hover img {
+    transform: scale(1.1);
+  }
+  
+
+  .hero-section {
+    background-color: #2e2e2e;
+    padding: 100px 0;
+    text-align: left;
+    position: relative;
+  }
+  
+  /* Social Icons in the hero section */
+  .social-icons {
+    margin-top: 4rem; /* Adjust as needed to place your icons where you like */
+    display: flex;
+    justify-content: center; /* centers them horizontally below the content */
+    gap: 1rem;
+  }
+  
+  .social-icons img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a:hover img {
+    transform: scale(1.1);
+  }
+
+  .social-icons {
+    position: absolute;
+    bottom: 265px; /* larger value moves them higher */
+    left: 670px;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  
