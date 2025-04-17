@@ -4,20 +4,17 @@
 <head>
   <meta charset="UTF-8" />
   <title>My Full Portfolio</title>
-  <!-- Reuse the same stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
-  <!-- ======== Header / Navigation (copied from index.html) ======== -->
+<body>
+  <!-- ======== Header / Navigation ======== -->
   <header class="site-header">
     <div class="container">
-      <div class="logo">
-        <h1>Christopher Ernst-Fortin</h1>
-      </div>
+      <div class="logo"><h1>Christopher Ernst-Fortin</h1></div>
+
       <nav class="main-nav">
         <ul>
-          <!-- Match the same links/order as index.html -->
           <li><a href="index.html#home">Home</a></li>
           <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#resume">Resume</a></li>
@@ -32,56 +29,87 @@
   <section class="portfolio-gallery">
     <div class="container">
       <h2>All Projects</h2>
-      <p>A closer look at the projects I've worked on, from AI lung-scan classification to church calendars and travel planning apps.</p>
+      <p>A closer look at the projects I’ve worked on, from AI lung‑scan classification to
+        church calendars and travel‑planning apps.</p>
 
       <div class="project-grid">
-        
+
+
+
+
+        <!-- ===== PatchNotes ===== -->
+        <div class="project-card">
+          <!-- Replace patchnotes.png with your thumbnail image -->
+          <img src="patchnotes.png" alt="PatchNotes Web App Screenshot" />
+          <h3>PatchNotes</h3>
+          <p>
+            A full‑stack app that delivers real‑time legislative and regulatory updates<br />
+            with AI‑generated summaries, bookmarks, and email alerts.
+          </p>
+
+          <!-- GitHub repo (swap in the real URL) -->
+          <a
+            href="https://github.com/ernstc2/patchnotes" 
+            class="btn btn-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Repo
+          </a>
+        </div>
+
+
         <!-- ===== Church Website ===== -->
         <div class="project-card">
-          <!-- Make sure 'project3.png' matches the real file name/path -->
           <img src="project3.png" alt="Presbyterian Church Website Screenshot" />
           <h3>Presbyterian Church Website</h3>
           <p>
-            A responsive site showcasing events, sermons, and an interactive calendar.  
+            A responsive site showcasing events, sermons, and an interactive calendar.<br />
             Built with HTML, CSS, and JavaScript, focusing on community engagement.
           </p>
-          <!-- Optional link button (to GitHub, live demo, or a case study) -->
-          <!-- <a href="#" class="btn btn-secondary">View More</a> -->
+          <a
+            href="https://github.com/ernstc2/The-King-Ferry-Presbyterian-Church-Website"                 
+            class="btn btn-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Repo
+          </a>
         </div>
 
         <!-- ===== MaLung ===== -->
         <div class="project-card">
-          <!-- Make sure 'project1.png' matches the real file name/path -->
           <img src="project1.png" alt="MaLung Project Screenshot" />
           <h3>MaLung</h3>
           <p>
-            AI-driven COVID-19 lung-scan classifier built with Docker &amp; Microsoft Azure.  
-            Integrated a responsive Figma design with a MariaDB database via PHP.
+            AI‑driven COVID‑19 lung‑scan classifier built with Docker &amp; Microsoft Azure.<br />
+            Integrated a Figma UI with a MariaDB back‑end.
           </p>
-          <!-- <a href="#" class="btn btn-secondary">GitHub Repo</a> -->
+          
         </div>
 
         <!-- ===== Travercity ===== -->
         <div class="project-card">
-          <!-- Make sure 'project2.png' matches the real file name/path -->
           <img src="project2.png" alt="Travercity Project Screenshot" />
           <h3>Travercity</h3>
           <p>
-            A travel planning web app that features real-time weather integration  
-            and location-based recommendations for a better itinerary experience.
+            A travel‑planning web app that features real‑time weather integration<br />
+            and location‑based recommendations for a better itinerary experience.
           </p>
-          <!-- <a href="#" class="btn btn-secondary">Live Demo</a> -->
         </div>
 
       </div> <!-- .project-grid -->
     </div> <!-- .container -->
   </section>
 
-  <!-- ========== Footer (Optional) ========== -->
+  <!-- ========== Footer ========== -->
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2025 Christopher Ernst-Fortin. All rights reserved. I cant believe you read this.</p>
+      <p>&copy; 2025 Christopher Ernst‑Fortin. All rights reserved. I can’t believe you read this.</p>
     </div>
   </footer>
+
+  <!-- optional scripts -->
+  <script src="animations.js"></script>
 </body>
 </html>
