@@ -3,12 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <meta name="description" content="Christopher Ernst-Fortin — Software Sales Engineer and Web Designer. Portfolio, resume, and contact info." />
+  <meta property="og:title" content="Christopher Ernst-Fortin | Portfolio" />
+  <meta property="og:description" content="Software Sales Engineer and Web Designer. Check out my projects, resume, and contact info." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ernstc2.github.io" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <title>Christopher Ernst-Fortin | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link 
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" 
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
     rel="stylesheet"
   >
 </head>
@@ -25,12 +31,16 @@
         <ul>
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li> <!-- NEW LINK IN NAV -->
+          <li><a href="#resume">Resume</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
-          <!--<li><a href="testing/key.html">NewPortfolioInWorks</a></li> a-->
         </ul>
       </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
@@ -46,7 +56,20 @@
           <a href="#" class="btn btn-primary" id="hireMeBtn">Hire Me</a>
           <a href="Christopher Ernst-Fortin RESUME.pdf" class="btn btn-secondary" download="Christopher Ernst-Fortin RESUME.pdf">Download CV</a>
         </div>
-        <!-- Modal (hidden by default) placed inside hero-text -->
+        <!-- Social Icons -->
+        <div class="social-icons">
+          <a href="https://linkedin.com/in/chris-ernstfortin" target="_blank">
+            <img src="icons/linkedinn.png" alt="LinkedIn" />
+          </a>
+          <a href="https://github.com/ernstc2" target="_blank">
+            <img src="icons/github.png" alt="GitHub" />
+          </a>
+          <a href="mailto:cernstfortin@gmail.com">
+            <img src="icons/gmail.png" alt="Email" />
+          </a>
+        </div>
+
+        <!-- Modal (hidden by default) -->
         <div id="hireMeModal" class="modal">
           <div class="modal-content">
             <span class="close">&times;</span>
@@ -62,25 +85,12 @@
       </div>
       <!-- Image Column -->
       <div class="hero-image">
-        <img src="wow.png" alt="Your Portrait" />
+        <img src="wow.png" alt="Christopher Ernst-Fortin" />
       </div>
     </div>
-    
-    <!-- Social Icons -->
-    <div class="social-icons">
-      <a href="https://linkedin.com/in/chris-ernstfortin" target="_blank">
-        <img src="icons/linkedinn.png" alt="LinkedIn Icon" />
-      </a>
-      <a href="https://github.com/ernstc2" target="_blank">
-        <img src="icons/github.png" alt="GitHub Icon" />
-      </a>
-      <a href="mailto:cernstfortin@gmail.com">
-        <img src="icons/gmail.png" alt="Gmail Icon" />
-      </a>
-    </div>
+
   </section>
-  
-  
+
 
   <!-- ======== About Section ======== -->
   <section id="about" class="section about-section">
@@ -89,7 +99,7 @@
       <p>Technology professional with a background in software engineering and client-facing technical roles, focused on serving as the bridge between technical teams and business stakeholders. I hold a B.S. in Information Technology and Web Science with a minor in Economics from Rensselaer Polytechnic Institute.
 
         Most recently, I worked as a Software Sales Engineer at REPAY, translating business requirements into technical payment integrations, delivering API demos, and supporting client onboarding. Previously, I contributed to production releases as a Software Engineering Intern, working closely with QA, UX, and development teams.
-        
+
         Skilled in JavaScript/TypeScript, Node.js, React, Python, SQL, REST APIs, Docker, Azure, and AWS, and especially motivated by roles that combine technical problem-solving with business impact, such as solutions engineering, consulting, or product-focused roles.</p>
     </div>
   </section>
@@ -97,7 +107,6 @@
   <!-- ======== Portfolio Section ======== -->
   <section id="portfolio" class="portfolio-section">
     <div class="container">
-      <!-- Intro Content -->
       <div class="portfolio-intro">
         <h2>Portfolio</h2>
         <p>
@@ -105,26 +114,19 @@
           into my full collection of work, from web apps to AI-driven solutions.
         </p>
       </div>
-  
-      <!-- Button Wrapper -->
       <div class="portfolio-btn-wrapper">
-        <a href="portfolio.html" class="btn btn-primary">
-          View All Projects
-        </a>
+        <a href="portfolio.html" class="btn btn-primary">View All Projects</a>
       </div>
     </div>
   </section>
-  
-  
 
 
   <!-- ======== Resume Section ======== -->
   <section id="resume" class="resume-section">
     <div class="container">
-      <!-- Main Heading -->
       <h2>Resume</h2>
-  
-      <!-- ===== Contact Info (Grid) ===== -->
+
+      <!-- Contact Info (Grid) -->
       <div class="resume-contact">
         <div class="contact-item">
           <strong>Address:</strong>
@@ -143,12 +145,11 @@
           <a href="https://linkedin.com/in/chris-ernstfortin" target="_blank">chris-ernstfortin</a>
         </div>
       </div>
-  
-      <!-- ===== Technical Skills (As “Tags”) ===== -->
+
+      <!-- Technical Skills -->
       <div class="resume-block">
         <h3>Technical Skills</h3>
         <div class="skills-list">
-          <!-- Add all your skills as skill-tag spans -->
           <span class="skill-tag">JavaScript (ES6+)</span>
           <span class="skill-tag">Python</span>
           <span class="skill-tag">C/C++</span>
@@ -181,30 +182,22 @@
           <span class="skill-tag">SaaS</span>
           <span class="skill-tag">Machine Learning</span>
           <span class="skill-tag">AWS</span>
-
         </div>
       </div>
-  
-      <!-- ===== Education ===== -->
+
+      <!-- Education -->
       <div class="resume-block">
         <h3>Education</h3>
-      
         <div class="education-entry">
           <h4>Rensselaer Polytechnic Institute (RPI) — Troy, NY</h4>
-          
-          <!-- Degree + Minor -->
           <p>
-            <strong>Bachelor of Science in Internet Technology and Web Sciences</strong> 
+            <strong>Bachelor of Science in Internet Technology and Web Sciences</strong>
             <em>(Minor: Economics)</em>
           </p>
-          
-          <!-- Graduation + GPA -->
           <p>
-            <strong>Graduation:</strong> May 2025 <br>
+            <strong>Graduation:</strong> May 2025 &nbsp;|&nbsp;
             <strong>GPA:</strong> 3.22 / 4.00
           </p>
-          
-          <!-- Relevant Coursework as bullet points -->
           <p><strong>Relevant Coursework:</strong></p>
           <ul class="coursework-list">
             <li>Data Structures</li>
@@ -218,136 +211,141 @@
           </ul>
         </div>
       </div>
-      
-  
-      <!-- ===== Experience ===== -->
+
+      <!-- Experience -->
       <div class="resume-block">
         <h3>Experience</h3>
 
         <div class="job-entry">
-          <h4>REPAY - Realtime Electronic Payments — Software Sales Engineer (Atlanta, GA)</h4>
-          <span class="job-dates">June 2025 – October 2025</span>
+          <h4>REPAY — Software Sales Engineer</h4>
+          <span class="job-dates">June 2025 – October 2025 &nbsp;·&nbsp; Atlanta, GA</span>
           <ul>
-            <li>Worked with enterprise clients, sales, and engineering teams to support custom payment integrations using REST 
-              APIs and SDKs.</li>
-            <li>Led technical discovery calls and delivered 10+ live demos and 3 API walkthroughs for enterprise prospects and 
-              clients. </li>
+            <li>Worked with enterprise clients, sales, and engineering teams to support custom payment integrations using REST APIs and SDKs.</li>
+            <li>Led technical discovery calls and delivered 10+ live demos and 3 API walkthroughs for enterprise prospects and clients.</li>
             <li>Onboarded 20+ client integrations, guiding authentication, data flows, and production deployment.</li>
             <li>Resolved 60+ integration issues, improving system reliability and reducing client time-to-launch.</li>
             <li>Translated client business requirements into clear technical implementation plans for payment integrations.</li>
           </ul>
         </div>
-  
-        <!-- J&J -->
+
         <div class="job-entry">
-          <h4>J&amp;J MedTech Supply Chain Product Availability App (Troy, NY)</h4>
-          <span class="job-dates">January 2025 – Present</span>
+          <h4>J&amp;J MedTech — Supply Chain Product Availability App</h4>
+          <span class="job-dates">January 2025 – Present &nbsp;·&nbsp; Troy, NY</span>
           <ul>
-            <li>Developed a Microsoft PowerApp to streamline product availability notifications for the Global MedTech Supply 
-              Chain Customer Service team.</li>
+            <li>Developed a Microsoft PowerApp to streamline product availability notifications for the Global MedTech Supply Chain Customer Service team.</li>
             <li>Designed admin and customer service interfaces for managing access and notifications.</li>
             <li>Integrated SharePoint Lists for structured data management and strict access control.</li>
             <li>Coordinated with supply chain and customer service teams during application development.</li>
           </ul>
         </div>
-  
-        <!-- GamesThatWork -->
+
         <div class="job-entry">
-          <h4>GamesThatWork — Software Engineering Intern (Atlanta, GA)</h4>
-          <span class="job-dates">March 2024 – August 2024</span>
+          <h4>GamesThatWork — Software Engineering Intern</h4>
+          <span class="job-dates">March 2024 – August 2024 &nbsp;·&nbsp; Atlanta, GA</span>
           <ul>
-            <li>Collaborated with development, QA, and UX teams to support new software releases and feature deployment. </li>
-            <li>Designed and implemented secure authentication system using Google Firebase and JavaScript, enabling user 
-              account management and protected feature access.</li>
-            <li>Resolved 51 GitHub issues via pull requests, improving system stability and release readiness. </li>
-            <li>Contributed to deployment of 5 new features across 2 production versions. </li>
+            <li>Collaborated with development, QA, and UX teams to support new software releases and feature deployment.</li>
+            <li>Designed and implemented secure authentication system using Google Firebase and JavaScript, enabling user account management and protected feature access.</li>
+            <li>Resolved 51 GitHub issues via pull requests, improving system stability and release readiness.</li>
+            <li>Contributed to deployment of 5 new features across 2 production versions.</li>
           </ul>
         </div>
+      </div>
 
-  
-      <!-- ===== Projects ===== -->
+      <!-- Projects -->
       <div class="resume-block">
         <h3>Projects</h3>
 
-        
-        <!-- PatchNotes -->
         <div class="job-entry">
-          <h4>PatchNotes (RPI Software Engineering &amp; Design Class Project)</h4>
+          <h4>PatchNotes — RPI Software Engineering &amp; Design Class Project</h4>
           <span class="job-dates">January 2025 – Present</span>
           <ul>
-            <li>Collaborated with a team to develop PatchNotes, a web app that aggregates legislative updates from the government 
-              APIs and provides AI-generated summaries.</li>
-            <li>Developed the back-end using Node.js, Express, MongoDB, implementing secure user authentication, database 
-              integration, and RESTful API endpoints.</li>
-            <li>Implemented bookmarks, multi‑criteria filtering, and NodeMailer email alerts for personalized updates</li>
+            <li>Collaborated with a team to develop PatchNotes, a web app that aggregates legislative updates from government APIs and provides AI-generated summaries.</li>
+            <li>Developed the back-end using Node.js, Express, MongoDB, implementing secure user authentication, database integration, and RESTful API endpoints.</li>
+            <li>Implemented bookmarks, multi-criteria filtering, and NodeMailer email alerts for personalized updates.</li>
           </ul>
         </div>
 
-        <!-- King Ferry Presbyterian Church -->
         <div class="job-entry">
           <h4>King Ferry Presbyterian Church — Web Page Project Manager</h4>
           <span class="job-dates">September 2024 – December 2024</span>
           <ul>
-            <li>Led a team of 4 to design and develop a responsive website to showcase church events, services, and outreach. </li>
+            <li>Led a team of 4 to design and develop a responsive website to showcase church events, services, and outreach.</li>
             <li>Built using HTML, CSS, and JavaScript, focusing on a user-friendly interface and accessibility.</li>
-            <li>Integrated interactive features, including an events calendar and contact form, to enhance engagement. </li>
+            <li>Integrated interactive features, including an events calendar and contact form, to enhance engagement.</li>
           </ul>
         </div>
-  
-        <!-- Travercity -->
+
         <div class="job-entry">
-          <h4>Travercity (RPI Software Engineering &amp; Design Class Project)</h4>
+          <h4>Travercity — RPI Software Engineering &amp; Design Class Project</h4>
           <span class="job-dates">September 2023 – December 2023</span>
           <ul>
-            <li>Collaborated to design a web app to streamline travel planning with features like itinerary creation and real-time 
-              weather updates. </li>
-            <li>Integrated APIs for weather data and location-based recommendations to enhance user experience. </li>
+            <li>Collaborated to design a web app to streamline travel planning with features like itinerary creation and real-time weather updates.</li>
+            <li>Integrated APIs for weather data and location-based recommendations to enhance user experience.</li>
           </ul>
         </div>
-  
 
-
-      <!-- MaLung -->
-      <div class="job-entry">
-        <h4>MaLung (RPI Software Engineering &amp; Design Class Project)</h4>
-        <span class="job-dates">September 2022 – December 2022</span>
-        <ul>
-          <li>Collaborated in a team of 3 to design an online COVID-19 AI classifier to detect cases in lung scans.</li>
-          <li>Managed back-end / DevOps tasks, hosted on Microsoft Azure and containerizing development with Docker. </li>
-          <li>Designed a responsive UI in Figma and implemented a database with MariaDB integrated through a PHP back-end.</li>
-        </ul>
+        <div class="job-entry">
+          <h4>MaLung — RPI Software Engineering &amp; Design Class Project</h4>
+          <span class="job-dates">September 2022 – December 2022</span>
+          <ul>
+            <li>Collaborated in a team of 3 to design an online COVID-19 AI classifier to detect cases in lung scans.</li>
+            <li>Managed back-end / DevOps tasks, hosted on Microsoft Azure and containerizing development with Docker.</li>
+            <li>Designed a responsive UI in Figma and implemented a database with MariaDB integrated through a PHP back-end.</li>
+          </ul>
+        </div>
       </div>
-  
-    </div> <!-- .container -->
+
+    </div>
   </section>
-  
-  
+
 
   <!-- ======== Contact Section ======== -->
   <section id="contact" class="section contact-section">
     <div class="container">
       <h2>Contact Me</h2>
       <p>
-        Interested in working together or have any questions? 
+        Interested in working together or have any questions?
         I will literally instantly respond to you. I promise.
       </p>
-  
-      <!-- Contact Info (optional) -->
+
       <div class="contact-info">
         <p><strong>Phone:</strong> <a href="tel:7707224302">770-722-4302</a></p>
         <p><strong>Email:</strong> <a href="mailto:cernstfortin@gmail.com">cernstfortin@gmail.com</a></p>
       </div>
-  
+
+      <!-- Contact Form — replace YOUR_FORM_ID with your Formspree form ID (formspree.io) -->
+      <form class="contact-form" action="https://formspree.io/f/mqeyknkk" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="What's on your mind?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+
+      <div class="form-success" id="formSuccess">
+        <strong>Message sent!</strong> Thanks for reaching out — I'll get back to you shortly.
+      </div>
+
     </div>
   </section>
-  
+
 
   <!-- ======== Footer ======== -->
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2025 Christopher Ernst-Fortin. All rights reserved. I cant believe you read this.</p>
+      <p>&copy; 2025 Christopher Ernst-Fortin. All rights reserved. I can't believe you read this.</p>
     </div>
   </footer>
+
+<button id="scrollTop" class="scroll-top-btn" aria-label="Scroll to top">&#8679;</button>
 
 <script src="modal.js"></script>
 <script src="animations.js"></script>
