@@ -46,49 +46,58 @@
 
   <!-- ======== Hero Section ======== -->
   <section id="home" class="hero-section">
+    <div class="hero-blobs" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
     <div class="container hero-content">
       <!-- Text Column -->
       <div class="hero-text">
-        <h2>Hello! I'm Chris :D</h2>
-        <h1>I'm a Professional Software Sales Engineer &amp; <span>Web Designer</span></h1>
-        <p>👇 you should click that nice button below 😎</p>
+        <span class="badge-available">● Open to Opportunities</span>
+        <h2>Hi, I'm Chris</h2>
+        <h1>Software Sales Engineer &amp; <span>Web Designer</span></h1>
+        <p>I bridge complex technology and real business outcomes. RPI grad based in Atlanta, GA — let's build something great.</p>
         <div class="buttons">
           <a href="#" class="btn btn-primary" id="hireMeBtn">Hire Me</a>
           <a href="Christopher Ernst-Fortin RESUME.pdf" class="btn btn-secondary" download="Christopher Ernst-Fortin RESUME.pdf">Download CV</a>
         </div>
         <!-- Social Icons -->
         <div class="social-icons">
-          <a href="https://linkedin.com/in/chris-ernstfortin" target="_blank">
+          <a href="https://linkedin.com/in/chris-ernstfortin" target="_blank" aria-label="LinkedIn">
             <img src="icons/linkedinn.png" alt="LinkedIn" />
           </a>
-          <a href="https://github.com/ernstc2" target="_blank">
+          <a href="https://github.com/ernstc2" target="_blank" aria-label="GitHub">
             <img src="icons/github.png" alt="GitHub" />
           </a>
-          <a href="mailto:cernstfortin@gmail.com">
+          <a href="mailto:cernstfortin@gmail.com" aria-label="Email">
             <img src="icons/gmail.png" alt="Email" />
           </a>
         </div>
-
-        <!-- Modal (hidden by default) -->
-        <div id="hireMeModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>WOW! You really clicked that??</h2>
-            <p>Connect with me:</p>
-            <ul>
-              <li><strong>Phone:</strong> <a href="tel:7707224302">770-722-4302</a></li>
-              <li><strong>Email:</strong> <a href="mailto:cernstfortin@gmail.com">cernstfortin@gmail.com</a></li>
-              <li><strong>LinkedIn:</strong> <a href="http://linkedin.com/in/chris-ernstfortin" target="_blank">chris-ernstfortin</a></li>
-            </ul>
-          </div>
-        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+          <span class="scroll-mouse"></span>
+        </a>
       </div>
       <!-- Image Column -->
       <div class="hero-image">
-        <img src="wow.png" alt="Christopher Ernst-Fortin" />
+        <div class="hero-img-wrapper">
+          <img src="wow.png" alt="Christopher Ernst-Fortin" />
+        </div>
       </div>
     </div>
 
+    <!-- Modal (hidden by default) -->
+    <div id="hireMeModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>WOW! You really clicked that??</h2>
+        <p>Connect with me:</p>
+        <ul>
+          <li><strong>Phone:</strong> <a href="tel:7707224302">770-722-4302</a></li>
+          <li><strong>Email:</strong> <a href="mailto:cernstfortin@gmail.com">cernstfortin@gmail.com</a></li>
+          <li><strong>LinkedIn:</strong> <a href="http://linkedin.com/in/chris-ernstfortin" target="_blank">chris-ernstfortin</a></li>
+        </ul>
+      </div>
+    </div>
   </section>
 
 
@@ -96,11 +105,27 @@
   <section id="about" class="section about-section">
     <div class="container">
       <h2>About Me</h2>
-      <p>Technology professional with a background in software engineering and client-facing technical roles, focused on serving as the bridge between technical teams and business stakeholders. I hold a B.S. in Information Technology and Web Science with a minor in Economics from Rensselaer Polytechnic Institute.
-
-        Most recently, I worked as a Software Sales Engineer at REPAY, translating business requirements into technical payment integrations, delivering API demos, and supporting client onboarding. Previously, I contributed to production releases as a Software Engineering Intern, working closely with QA, UX, and development teams.
-
-        Skilled in JavaScript/TypeScript, Node.js, React, Python, SQL, REST APIs, Docker, Azure, and AWS, and especially motivated by roles that combine technical problem-solving with business impact, such as solutions engineering, consulting, or product-focused roles.</p>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Technology professional with a background in software engineering and client-facing technical roles, focused on serving as the bridge between technical teams and business stakeholders. I hold a B.S. in Information Technology and Web Science with a minor in Economics from Rensselaer Polytechnic Institute.</p>
+          <p>Most recently, I worked as a Software Sales Engineer at REPAY, translating business requirements into technical payment integrations, delivering API demos, and supporting client onboarding. Previously, I contributed to production releases as a Software Engineering Intern, working closely with QA, UX, and development teams.</p>
+          <p>Skilled in JavaScript/TypeScript, Node.js, React, Python, SQL, REST APIs, Docker, Azure, and AWS, and especially motivated by roles that combine technical problem-solving with business impact.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-num" data-target="60">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Integration Issues<br>Resolved</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-target="20">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Client Integrations<br>Onboarded</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num" data-target="51">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">GitHub Issues<br>Fixed</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -109,11 +134,39 @@
     <div class="container">
       <div class="portfolio-intro">
         <h2>Portfolio</h2>
-        <p>
-          A quick look at some of my favorite projects. Click below to dive deeper
-          into my full collection of work, from web apps to AI-driven solutions.
-        </p>
+        <p>A quick look at some of my favorite projects — from AI-driven tools to full-stack web apps.</p>
       </div>
+
+      <div class="featured-grid">
+
+        <div class="project-card">
+          <span class="card-badge">Featured</span>
+          <img src="patchnotes.png" alt="PatchNotes Web App Screenshot" />
+          <h3>PatchNotes</h3>
+          <p>Full-stack app delivering real-time legislative updates with AI-generated summaries, bookmarks, and email alerts.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">AI</span>
+          </div>
+          <a href="https://github.com/ernstc2/patchnotes" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Repo</a>
+        </div>
+
+        <div class="project-card">
+          <img src="project1.png" alt="MaLung Project Screenshot" />
+          <h3>MaLung</h3>
+          <p>AI-driven COVID-19 lung-scan classifier. Hosted on Azure, containerized with Docker, Figma UI, and a PHP/MariaDB backend.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Azure</span>
+            <span class="tech-tag">MariaDB</span>
+          </div>
+        </div>
+
+      </div>
+
       <div class="portfolio-btn-wrapper">
         <a href="portfolio.html" class="btn btn-primary">View All Projects</a>
       </div>
@@ -149,39 +202,67 @@
       <!-- Technical Skills -->
       <div class="resume-block">
         <h3>Technical Skills</h3>
-        <div class="skills-list">
-          <span class="skill-tag">JavaScript (ES6+)</span>
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">C/C++</span>
-          <span class="skill-tag">Node.js</span>
-          <span class="skill-tag">Express</span>
-          <span class="skill-tag">bcrypt</span>
-          <span class="skill-tag">React</span>
-          <span class="skill-tag">jQuery</span>
-          <span class="skill-tag">PHP</span>
-          <span class="skill-tag">MongoDB</span>
-          <span class="skill-tag">Mongoose</span>
-          <span class="skill-tag">MariaDB</span>
-          <span class="skill-tag">SQL</span>
-          <span class="skill-tag">REST APIs</span>
-          <span class="skill-tag">Docker</span>
-          <span class="skill-tag">Azure</span>
-          <span class="skill-tag">PowerApps</span>
-          <span class="skill-tag">Power Automate</span>
-          <span class="skill-tag">SharePoint Lists</span>
-          <span class="skill-tag">Git/GitHub</span>
-          <span class="skill-tag">Figma</span>
-          <span class="skill-tag">Agile</span>
-          <span class="skill-tag">NodeMailer</span>
-          <span class="skill-tag">AI Integration</span>
-          <span class="skill-tag">HTML</span>
-          <span class="skill-tag">CSS</span>
-          <span class="skill-tag">Web Design</span>
-          <span class="skill-tag">Linux</span>
-          <span class="skill-tag">R</span>
-          <span class="skill-tag">SaaS</span>
-          <span class="skill-tag">Machine Learning</span>
-          <span class="skill-tag">AWS</span>
+
+        <div class="skills-category">
+          <div class="skills-cat-label">Languages</div>
+          <div class="skills-list">
+            <span class="skill-tag">JavaScript (ES6+)</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C/C++</span>
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">R</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <div class="skills-cat-label">Frameworks &amp; Libraries</div>
+          <div class="skills-list">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Express</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">jQuery</span>
+            <span class="skill-tag">bcrypt</span>
+            <span class="skill-tag">Mongoose</span>
+            <span class="skill-tag">NodeMailer</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <div class="skills-cat-label">Cloud &amp; DevOps</div>
+          <div class="skills-list">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Azure</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Git/GitHub</span>
+            <span class="skill-tag">Linux</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <div class="skills-cat-label">Databases &amp; APIs</div>
+          <div class="skills-list">
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">MariaDB</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skills-category">
+          <div class="skills-cat-label">Tools &amp; Platforms</div>
+          <div class="skills-list">
+            <span class="skill-tag">PowerApps</span>
+            <span class="skill-tag">Power Automate</span>
+            <span class="skill-tag">SharePoint Lists</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Agile</span>
+            <span class="skill-tag">SaaS</span>
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">AI Integration</span>
+            <span class="skill-tag">Web Design</span>
+          </div>
         </div>
       </div>
 
@@ -313,7 +394,6 @@
         <p><strong>Email:</strong> <a href="mailto:cernstfortin@gmail.com">cernstfortin@gmail.com</a></p>
       </div>
 
-      <!-- Contact Form — replace YOUR_FORM_ID with your Formspree form ID (formspree.io) -->
       <form class="contact-form" action="https://formspree.io/f/mqeyknkk" method="POST">
         <div class="form-group">
           <label for="name">Name</label>

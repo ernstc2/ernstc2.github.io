@@ -1,67 +1,37 @@
-/* animations.js — entrance animations, ripple effect, typewriter */
+/* animations.js — entrance animations, ripple effect, typewriter, counters */
 
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ------------------------------------------------------
-     Inject CSS for animation styles
+     Header shadow on scroll
      ------------------------------------------------------ */
-  const style = document.createElement('style');
-  style.textContent = `
-    /* ===== Section / Footer reveal ===== */
-    .reveal {
-      opacity: 0;
-      filter: blur(6px);
-      transform: translateY(60px) scale(0.96);
-      transition: opacity 1.2s cubic-bezier(0.22,0.61,0.36,1),
-                  transform 1.2s cubic-bezier(0.22,0.61,0.36,1),
-                  filter 1.2s cubic-bezier(0.22,0.61,0.36,1);
-    }
-    .reveal.show {
-      opacity: 1;
-      filter: blur(0);
-      transform: translateY(0) scale(1);
-    }
-
-    /* ===== Header nav link reveal ===== */
-    .nav-item {
-      opacity: 0;
-      transform: translateY(-20px);
-      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    }
-    .nav-item.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* ===== Button ripple ===== */
-    .btn { position: relative; overflow: hidden; }
-    .btn .ripple {
-      position: absolute;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.4);
-      transform: scale(0);
-      animation: ripple 900ms ease-out;
-      pointer-events: none;
-    }
-    @keyframes ripple {
-      to { transform: scale(5); opacity: 0; }
-    }
-  `;
-  document.head.appendChild(style);
+  const header = document.querySelector('.site-header');
+  if (header) {
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  }
 
   /* ------------------------------------------------------
-     Section / footer reveal (header excluded)
+     Section / footer reveal — IntersectionObserver
      ------------------------------------------------------ */
-  const blocks = [
+  const revealTargets = [
     ...document.querySelectorAll('section'),
     document.querySelector('footer')
   ].filter(Boolean);
 
-  blocks.forEach((el, i) => {
-    el.classList.add('reveal');
-    const delay = 400 + i * 300;
-    setTimeout(() => el.classList.add('show'), delay);
-  });
+  revealTargets.forEach(el => el.classList.add('reveal'));
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  revealTargets.forEach(el => revealObserver.observe(el));
 
   /* ------------------------------------------------------
      Header nav link animation — slide down individually
@@ -69,8 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navItems = document.querySelectorAll('.main-nav li');
   navItems.forEach((li, i) => {
     li.classList.add('nav-item');
-    const delay = 200 + i * 250;
-    setTimeout(() => li.classList.add('show'), delay);
+    setTimeout(() => li.classList.add('show'), 150 + i * 120);
   });
 
   /* ------------------------------------------------------
@@ -121,27 +90,59 @@ document.addEventListener('DOMContentLoaded', () => {
         charIndex++;
       }
 
-      let delay = isDeleting ? 70 : 110;
+      let delay = isDeleting ? 65 : 100;
 
       if (!isDeleting && charIndex === current.length) {
-        delay = 2200; // pause at full word
+        delay = 2200;
         isDeleting = true;
       } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         roleIndex = (roleIndex + 1) % roles.length;
-        delay = 400; // brief pause before typing next word
+        delay = 350;
       }
 
       setTimeout(type, delay);
     }
 
-    // Start after initial page animations settle
-    setTimeout(type, 1800);
+    setTimeout(type, 1400);
+  }
+
+  /* ------------------------------------------------------
+     Animated stat counters
+     Looks for elements with data-target attribute
+     ------------------------------------------------------ */
+  const statNums = document.querySelectorAll('.stat-num[data-target]');
+
+  if (statNums.length) {
+    const countObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        countObserver.unobserve(entry.target);
+
+        const el = entry.target;
+        const target = parseInt(el.dataset.target, 10);
+        const duration = 1400;
+        const startTime = performance.now();
+
+        function updateCount(currentTime) {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          // Ease out cubic
+          const eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.round(eased * target);
+          if (progress < 1) requestAnimationFrame(updateCount);
+        }
+
+        requestAnimationFrame(updateCount);
+      });
+    }, { threshold: 0.5 });
+
+    statNums.forEach(el => countObserver.observe(el));
   }
 
   /* ------------------------------------------------------
      Active nav link on scroll (index.html only)
-     Uses IntersectionObserver to highlight the current section
+     Uses IntersectionObserver to highlight current section
      ------------------------------------------------------ */
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.main-nav a[href^="#"]');
@@ -170,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (scrollTopBtn) {
     window.addEventListener('scroll', () => {
       scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
-    });
+    }, { passive: true });
     scrollTopBtn.addEventListener('click', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
@@ -232,7 +233,6 @@ document.addEventListener('DOMContentLoaded', () => {
       navToggle.setAttribute('aria-expanded', isOpen);
     });
 
-    // Close menu when a nav link is clicked
     mainNav.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navToggle.classList.remove('open');
