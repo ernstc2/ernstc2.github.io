@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
     rel="stylesheet"
   >
 </head>
@@ -101,30 +101,86 @@
   </section>
 
 
+  <!-- ======== Skills Ticker ======== -->
+  <div class="skills-ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>JavaScript</span><span class="ticker-sep">·</span>
+      <span>TypeScript</span><span class="ticker-sep">·</span>
+      <span>Python</span><span class="ticker-sep">·</span>
+      <span>Node.js</span><span class="ticker-sep">·</span>
+      <span>React</span><span class="ticker-sep">·</span>
+      <span>REST APIs</span><span class="ticker-sep">·</span>
+      <span>Docker</span><span class="ticker-sep">·</span>
+      <span>Azure</span><span class="ticker-sep">·</span>
+      <span>AWS</span><span class="ticker-sep">·</span>
+      <span>MongoDB</span><span class="ticker-sep">·</span>
+      <span>SQL</span><span class="ticker-sep">·</span>
+      <span>Figma</span><span class="ticker-sep">·</span>
+      <span>Sales Engineering</span><span class="ticker-sep">·</span>
+      <span>Machine Learning</span><span class="ticker-sep">·</span>
+      <!-- duplicate for seamless loop -->
+      <span>JavaScript</span><span class="ticker-sep">·</span>
+      <span>TypeScript</span><span class="ticker-sep">·</span>
+      <span>Python</span><span class="ticker-sep">·</span>
+      <span>Node.js</span><span class="ticker-sep">·</span>
+      <span>React</span><span class="ticker-sep">·</span>
+      <span>REST APIs</span><span class="ticker-sep">·</span>
+      <span>Docker</span><span class="ticker-sep">·</span>
+      <span>Azure</span><span class="ticker-sep">·</span>
+      <span>AWS</span><span class="ticker-sep">·</span>
+      <span>MongoDB</span><span class="ticker-sep">·</span>
+      <span>SQL</span><span class="ticker-sep">·</span>
+      <span>Figma</span><span class="ticker-sep">·</span>
+      <span>Sales Engineering</span><span class="ticker-sep">·</span>
+      <span>Machine Learning</span><span class="ticker-sep">·</span>
+    </div>
+  </div>
+
   <!-- ======== About Section ======== -->
   <section id="about" class="section about-section">
     <div class="container">
       <h2>About Me</h2>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>Technology professional with a background in software engineering and client-facing technical roles, focused on serving as the bridge between technical teams and business stakeholders. I hold a B.S. in Information Technology and Web Science with a minor in Economics from Rensselaer Polytechnic Institute.</p>
-          <p>Most recently, I worked as a Software Sales Engineer at REPAY, translating business requirements into technical payment integrations, delivering API demos, and supporting client onboarding. Previously, I contributed to production releases as a Software Engineering Intern, working closely with QA, UX, and development teams.</p>
-          <p>Skilled in JavaScript/TypeScript, Node.js, React, Python, SQL, REST APIs, Docker, Azure, and AWS, and especially motivated by roles that combine technical problem-solving with business impact.</p>
+      <div class="bento-grid">
+
+        <!-- Main about card -->
+        <div class="bento-card bento-main">
+          <p>Technology professional bridging technical teams and business stakeholders. B.S. in Information Technology and Web Science with a minor in Economics from Rensselaer Polytechnic Institute. Skilled in JavaScript/TypeScript, Node.js, React, Python, SQL, REST APIs, Docker, Azure, and AWS.</p>
+          <p>Most recently, Software Sales Engineer at REPAY — translating business requirements into technical payment integrations, delivering API demos, and onboarding enterprise clients. Previously contributed to production releases as a Software Engineering Intern, working closely with QA, UX, and development teams.</p>
+          <p>Especially motivated by roles combining technical problem-solving with real business impact.</p>
         </div>
-        <div class="about-stats">
-          <div class="stat-item">
+
+        <!-- Location card -->
+        <div class="bento-card bento-location">
+          <svg class="bento-location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <div class="bento-city">Atlanta, GA</div>
+          <div class="bento-sub">Open to remote</div>
+        </div>
+
+        <!-- Stat cards -->
+        <div class="bento-card bento-s1">
+          <div class="bento-stat-row">
             <span class="stat-num" data-target="60">0</span><span class="stat-plus">+</span>
-            <span class="stat-label">Integration Issues<br>Resolved</span>
           </div>
-          <div class="stat-item">
-            <span class="stat-num" data-target="20">0</span><span class="stat-plus">+</span>
-            <span class="stat-label">Client Integrations<br>Onboarded</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-num" data-target="51">0</span><span class="stat-plus">+</span>
-            <span class="stat-label">GitHub Issues<br>Fixed</span>
-          </div>
+          <span class="stat-label">Integration Issues<br>Resolved</span>
         </div>
+
+        <div class="bento-card bento-s2">
+          <div class="bento-stat-row">
+            <span class="stat-num" data-target="20">0</span><span class="stat-plus">+</span>
+          </div>
+          <span class="stat-label">Client Integrations<br>Onboarded</span>
+        </div>
+
+        <div class="bento-card bento-s3">
+          <div class="bento-stat-row">
+            <span class="stat-num" data-target="51">0</span><span class="stat-plus">+</span>
+          </div>
+          <span class="stat-label">GitHub Issues<br>Fixed</span>
+        </div>
+
       </div>
     </div>
   </section>
@@ -141,7 +197,7 @@
 
         <div class="project-card">
           <span class="card-badge">Featured</span>
-          <img src="patchnotes.png" alt="PatchNotes Web App Screenshot" />
+          <div class="img-wrap"><img src="patchnotes.png" alt="PatchNotes Web App Screenshot" /></div>
           <h3>PatchNotes</h3>
           <p>Full-stack app delivering real-time legislative updates with AI-generated summaries, bookmarks, and email alerts.</p>
           <div class="tech-tags">
@@ -154,7 +210,7 @@
         </div>
 
         <div class="project-card">
-          <img src="project1.png" alt="MaLung Project Screenshot" />
+          <div class="img-wrap"><img src="project1.png" alt="MaLung Project Screenshot" /></div>
           <h3>MaLung</h3>
           <p>AI-driven COVID-19 lung-scan classifier. Hosted on Azure, containerized with Docker, Figma UI, and a PHP/MariaDB backend.</p>
           <div class="tech-tags">
