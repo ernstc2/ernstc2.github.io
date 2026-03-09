@@ -1144,6 +1144,7 @@ html, body {
   position: absolute;
   top: 14px;
   right: 14px;
+  z-index: 2;
   background: linear-gradient(135deg, var(--accent-purple), #7c6bff);
   color: #fff;
   font-size: 0.7rem;

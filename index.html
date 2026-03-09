@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Christopher Ernst-Fortin — Software Sales Engineer and Web Designer. Portfolio, resume, and contact info." />
+  <meta name="description" content="Christopher Ernst-Fortin — Technology Consultant and Software Engineer. Portfolio, resume, and contact info." />
   <meta property="og:title" content="Christopher Ernst-Fortin | Portfolio" />
-  <meta property="og:description" content="Software Sales Engineer and Web Designer. Check out my projects, resume, and contact info." />
+  <meta property="og:description" content="Technology Consultant and Software Engineer. Check out my projects, resume, and contact info." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ernstc2.github.io" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
@@ -55,8 +55,8 @@
       <div class="hero-text">
         <span class="badge-available">● Open to Opportunities</span>
         <h2>Hi, I'm Chris</h2>
-        <h1>Software Sales Engineer &amp; <span>Web Designer</span></h1>
-        <p>I bridge complex technology and real business outcomes. RPI grad based in Atlanta, GA — let's build something great.</p>
+        <h1>Software Engineer &amp; <span>Tech Consultant</span></h1>
+        <p>I translate complex technology into real business outcomes. RPI grad based in Atlanta, GA — let's build something great.</p>
         <div class="buttons">
           <a href="#" class="btn btn-primary" id="hireMeBtn">Hire Me</a>
           <a href="Christopher Ernst-Fortin RESUME.pdf" class="btn btn-secondary" download="Christopher Ernst-Fortin RESUME.pdf">Download CV</a>
@@ -190,10 +190,28 @@
     <div class="container">
       <div class="portfolio-intro">
         <h2>Portfolio</h2>
-        <p>A quick look at some of my favorite projects — from AI-driven tools to full-stack web apps.</p>
+        <p>A quick look at some of my favorite projects — from financial analytics dashboards to AI-driven tools and full-stack web apps.</p>
       </div>
 
       <div class="featured-grid">
+
+        <!-- ===== SMB Financial Health Dashboard ===== -->
+        <div class="project-card">
+          <span class="card-badge">Live</span>
+          <div class="img-wrap"><img src="smb-dashboard.png" alt="SMB Financial Health Dashboard Screenshot" /></div>
+          <h3>SMB Financial Health Dashboard</h3>
+          <p>Consulting analytics tool analyzing SaaS financial health — KPI scorecards, RAG benchmarks, P&L waterfall charts, and auto-generated insights.</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Streamlit</span>
+            <span class="tech-tag">Plotly</span>
+            <span class="tech-tag">Pandas</span>
+          </div>
+          <div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-top:0.5rem;">
+            <a href="https://smb-financial-health-dashboard-ycxqewt3iaugubk3f5ghhn.streamlit.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Dashboard</a>
+            <a href="https://github.com/ernstc2/SMB-Financial-Health-Dashboard" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Repo</a>
+          </div>
+        </div>
 
         <div class="project-card">
           <span class="card-badge">Featured</span>
@@ -279,6 +297,10 @@
             <span class="skill-tag">Node.js</span>
             <span class="skill-tag">Express</span>
             <span class="skill-tag">React</span>
+            <span class="skill-tag">Streamlit</span>
+            <span class="skill-tag">Plotly</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
             <span class="skill-tag">jQuery</span>
             <span class="skill-tag">bcrypt</span>
             <span class="skill-tag">Mongoose</span>
@@ -367,7 +389,7 @@
 
         <div class="job-entry">
           <h4>J&amp;J MedTech — Supply Chain Product Availability App</h4>
-          <span class="job-dates">January 2025 – Present &nbsp;·&nbsp; Troy, NY</span>
+          <span class="job-dates">January 2025 – May 2025 &nbsp;·&nbsp; Troy, NY</span>
           <ul>
             <li>Developed a Microsoft PowerApp to streamline product availability notifications for the Global MedTech Supply Chain Customer Service team.</li>
             <li>Designed admin and customer service interfaces for managing access and notifications.</li>
@@ -393,8 +415,19 @@
         <h3>Projects</h3>
 
         <div class="job-entry">
+          <h4>SMB Financial Health Dashboard — Personal Project</h4>
+          <span class="job-dates">March 2026 – Present</span>
+          <ul>
+            <li>Built an end-to-end consulting analytics dashboard analyzing the financial health of small-to-medium SaaS businesses using synthetic data for two fictional company profiles.</li>
+            <li>Designed a KPI computation engine calculating six metrics — gross margin, MoM revenue growth, OpEx ratio, revenue per employee, burn rate, and runway — benchmarked against industry standards with RAG status indicators.</li>
+            <li>Implemented automated consultant-style narrative generation to surface actionable insights from financial trends.</li>
+            <li>Deployed live on Streamlit Cloud; built with Python, Pandas, Plotly, and NumPy.</li>
+          </ul>
+        </div>
+
+        <div class="job-entry">
           <h4>PatchNotes — RPI Software Engineering &amp; Design Class Project</h4>
-          <span class="job-dates">January 2025 – Present</span>
+          <span class="job-dates">January 2025 – May 2025</span>
           <ul>
             <li>Collaborated with a team to develop PatchNotes, a web app that aggregates legislative updates from government APIs and provides AI-generated summaries.</li>
             <li>Developed the back-end using Node.js, Express, MongoDB, implementing secure user authentication, database integration, and RESTful API endpoints.</li>

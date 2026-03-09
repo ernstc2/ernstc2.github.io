@@ -67,9 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
      Typewriter effect — cycles through roles in hero h1 span
      ------------------------------------------------------ */
   const roles = [
-    'Web Designer',
+    'Tech Consultant',
     'Solutions Engineer',
-    'Software Engineer',
+    'Web Designer',
     'Problem Solver',
   ];
 
