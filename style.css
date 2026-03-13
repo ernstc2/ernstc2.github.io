@@ -1372,6 +1372,8 @@ html, body {
   background-color: rgba(168, 154, 138, 0.08);
   border: 1px solid rgba(168, 154, 138, 0.2);
   color: var(--accent-stone-light);
+  font-size: 0.62rem;
+  padding: 2px 7px;
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
