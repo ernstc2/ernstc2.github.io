@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
      Section / footer reveal — IntersectionObserver
      ------------------------------------------------------ */
   const revealTargets = [
-    ...document.querySelectorAll('section'),
+    ...document.querySelectorAll('section:not(.hero-section)'),
     document.querySelector('footer')
   ].filter(Boolean);
 
