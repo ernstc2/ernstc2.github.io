@@ -118,6 +118,8 @@
       <span>Figma</span><span class="ticker-sep">·</span>
       <span>Sales Engineering</span><span class="ticker-sep">·</span>
       <span>Machine Learning</span><span class="ticker-sep">·</span>
+      <span>Next.js</span><span class="ticker-sep">·</span>
+      <span>PostgreSQL</span><span class="ticker-sep">·</span>
       <!-- duplicate for seamless loop -->
       <span>JavaScript</span><span class="ticker-sep">·</span>
       <span>TypeScript</span><span class="ticker-sep">·</span>
@@ -132,6 +134,8 @@
       <span>Figma</span><span class="ticker-sep">·</span>
       <span>Sales Engineering</span><span class="ticker-sep">·</span>
       <span>Machine Learning</span><span class="ticker-sep">·</span>
+      <span>Next.js</span><span class="ticker-sep">·</span>
+      <span>PostgreSQL</span><span class="ticker-sep">·</span>
     </div>
   </div>
 
@@ -143,7 +147,7 @@
 
         <!-- Main about card -->
         <div class="bento-card bento-main">
-          <p>Technology professional bridging technical teams and business stakeholders. B.S. in Information Technology and Web Science with a minor in Economics from Rensselaer Polytechnic Institute. Skilled in JavaScript/TypeScript, Node.js, React, Python, SQL, REST APIs, Docker, Azure, and AWS.</p>
+          <p>Technology professional bridging technical teams and business stakeholders. B.S. in Information Technology and Web Science with a minor in Economics from Rensselaer Polytechnic Institute. Skilled in JavaScript/TypeScript, Node.js, React, Next.js, Python, SQL, PostgreSQL, REST APIs, Docker, Azure, and AWS.</p>
           <p>Most recently, Software Sales Engineer at REPAY — translating business requirements into technical payment integrations, delivering API demos, and onboarding enterprise clients. Previously contributed to production releases as a Software Engineering Intern, working closely with QA, UX, and development teams.</p>
           <p>Especially motivated by roles combining technical problem-solving with real business impact.</p>
         </div>
@@ -234,14 +238,22 @@
         </div>
 
         <div class="project-card">
-          <div class="img-wrap"><img src="project1.png" alt="MaLung Project Screenshot" /></div>
-          <h3>MaLung</h3>
-          <p>AI-driven COVID-19 lung-scan classifier. Hosted on Azure, containerized with Docker, Figma UI, and a PHP/MariaDB backend.</p>
+          <span class="card-badge">Live</span>
+          <div class="img-wrap"><img src="patchnotes.png" alt="PatchNotes Web App Screenshot" /></div>
+          <h3>PatchNotes</h3>
+          <p>A changelog for your government — AI-generated summaries of federal regulations, executive orders, and bills with search, filtering, and email digests.</p>
           <div class="tech-tags">
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">Docker</span>
-            <span class="tech-tag">Azure</span>
-            <span class="tech-tag">MariaDB</span>
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Gemini AI</span>
+            <span class="tech-tag">Tailwind CSS</span>
+            <span class="tech-tag">Drizzle ORM</span>
+            <span class="tech-tag">Resend</span>
+            <span class="tech-tag">Vercel</span>
+          </div>
+          <div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-top:0.5rem;">
+            <a href="https://patch-notes-sigma.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Live Site</a>
+            <a href="https://github.com/ernstc2/PatchNotes" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Repo</a>
           </div>
         </div>
 
@@ -292,6 +304,8 @@
             <span class="skill-tag">Node.js</span>
             <span class="skill-tag">Express</span>
             <span class="skill-tag">React</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Tailwind CSS</span>
             <span class="skill-tag">Streamlit</span>
             <span class="skill-tag">PHP</span>
             <span class="skill-tag">C/C++</span>
@@ -309,6 +323,8 @@
             <span class="skill-tag">AWS</span>
             <span class="skill-tag">Docker</span>
             <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Vercel</span>
+            <span class="skill-tag">GitHub Actions</span>
             <span class="skill-tag">Git/GitHub</span>
             <span class="skill-tag">pytest</span>
           </div>
@@ -328,6 +344,8 @@
         <div class="skills-category">
           <div class="skills-cat-label">Data &amp; Databases</div>
           <div class="skills-list">
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Drizzle ORM</span>
             <span class="skill-tag">MongoDB</span>
             <span class="skill-tag">Mongoose</span>
             <span class="skill-tag">MariaDB</span>
@@ -433,11 +451,12 @@
         </div>
 
         <div class="job-entry">
-          <h4>PatchNotes | Software Engineering and Design Class Project</h4>
-          <span class="job-dates">Jan 2025 – May 2025 &nbsp;·&nbsp; Troy, NY</span>
+          <h4>PatchNotes | Personal Project</h4>
+          <span class="job-dates">Jan 2025 – Present</span>
           <ul>
-            <li>Built a legislative tracking platform that aggregates government API data and delivers AI-generated policy summaries, enabling non-technical users to monitor regulatory changes in real time.</li>
-            <li>Architected Node.js/Express back-end with MongoDB, implementing secure authentication, RESTful APIs, multi-criteria filtering, bookmark management, and NodeMailer email alert system.</li>
+            <li>Built and deployed a government changelog platform that ingests federal regulations, executive orders, and bills daily, generating AI-powered summaries in a patch-notes format (What changed / Who it affects / Why it matters).</li>
+            <li>Architected full-stack app with Next.js 16, React 19, Drizzle ORM, and Neon PostgreSQL; integrated Google Gemini for structured JSON summaries, Resend for personalized email digests, and better-auth for authentication.</li>
+            <li>Deployed on Vercel with CI/CD via GitHub Actions; implemented a lazy DB proxy pattern to enable clean builds without a live database connection.</li>
           </ul>
         </div>
 
