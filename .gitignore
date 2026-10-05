@@ -1,1 +1,9 @@
-.claude/settings.local.json
+.claude/
+
+# Local working files / drafts — not for publishing
+Copy of Christopher Ernst-Fortin RESUME*.pdf
+README.md
+linkedin-about.txt
+papajohns.txt
+resume-update-for-claude-chrome.txt
+resume-fixes-for-claude-chrome.txt
